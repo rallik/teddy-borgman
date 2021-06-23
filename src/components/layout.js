@@ -4,7 +4,7 @@ import { Header, Navbar, Footer } from './index'
 // import Contact from '../components/Contact'
 
 
-const layout = ({ children }) => {
+const layout = ({ children, loction }) => {
     return (
         <React.Fragment>
             <Header />

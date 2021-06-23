@@ -6,10 +6,10 @@ import '../styles/styles.scss'
 
 
 // markup
-const IndexPage = () => {
+const IndexPage = ({ location }) => {
   return (
     <main className='page home-page'>
-      <Layout>
+      <Layout location={location}>
         <Hero />
         <Highlights />
       </Layout>
