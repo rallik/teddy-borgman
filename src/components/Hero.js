@@ -3,7 +3,11 @@ import React from 'react'
 const Hero = () => {
     return (
         <section className='section hero'>
-            <h2>Creator, editor, storyteller.</h2>
+            <div className='hero-text'>
+                <h2>Creator</h2>
+                <h2>Editor</h2>
+                <h2>Storyteller</h2>
+            </div>
         </section>
     )
 }
