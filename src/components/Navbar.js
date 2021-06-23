@@ -1,5 +1,7 @@
 import React, { useState } from 'react'
 import { Link } from 'gatsby'
+import NavIcon from '../assets/icons/nav.svg'
+
 
 
 const Nav = () => {
@@ -13,8 +15,8 @@ const Nav = () => {
 
     return (
         <React.Fragment>
-            <i className='nav-icon' onClick={handleClick}>
-                {clicked ? 'x' : '='}
+            <i className={clicked ? 'nav-icon active' : 'nav-icon'} onClick={handleClick}>
+                <NavIcon />
             </i>
             <nav className={clicked ? 'navbar active' : 'navbar'}>
 

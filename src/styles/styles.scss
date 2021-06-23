@@ -4,12 +4,15 @@
 
 body {
     font-family: Helvetica, sans-serif;
-    background-color: #fefefe;
+    background-color: #0b0b0b;
+    width: 100vw;
+    max-width: 2560;
+    height: 100vh;
 }
 
 header {
     font-family: "Kanit", Helvetica, sans-serif;
-    font-size: 1.5em;
+    font-size: 1.3em;
     width: min-content;
     line-height: 0.8em;
     position: absolute;
@@ -18,15 +21,47 @@ header {
 }
 
 .nav-icon {
-    font-size: 4em;
-    font-weight: 100;
     position: absolute;
     right: 12px;
-    top: 12px;
-    line-height: 0.3em;
+    top: 16px;
     z-index: 12;
-    // mix-blend-mode: difference;
-    color: white;
+    mix-blend-mode: difference;
+
+    .nav-icon-svg {
+        width: 24px;
+        height: 24px;
+        overflow: visible;
+    }
+
+    .line-1, .line-2, .line-3 {
+        stroke: #fefefe;
+        display: block;
+    }
+    .line-1, .line-3 {
+        transition: all 700ms ease;
+    }
+
+    .line-2 {
+        transition: all 500ms ease;
+    }
+}
+
+.nav-icon.active {
+    .line-1, .line-3 {
+        transform-origin: center;
+    }
+
+    .line-1 {
+        transform: rotate(35deg) translate(0px, 44%);
+    }
+
+    .line-3 {
+        transform: rotate(-35deg) translate(0px, -44%);
+    }
+
+    .line-2 {
+        opacity: 0;
+    }
 
 }
 
@@ -40,13 +75,34 @@ header {
     isolation: isolate;
     transition: all 0.5s ease;
     z-index: 11;
-    background-color: white;
-    mix-blend-mode: difference;
-
-
 }
 
 .navbar.active {
     top: 0;
     right: 0;
+}
+
+.footer {
+    height: 10vh;
+    width: 100%;
+    color: #fefefe;
+    display: grid;
+    grid-template-columns: 16px 1fr 1fr 1fr 16px;
+    grid-template-rows: 1fr 1fr 1fr 16px;
+
+}
+
+.page {
+    display: flex;
+    background-color: #fefefe;
+    min-height: 100vh;
+    flex-direction: column;
+}
+
+.section {
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    grid-template-rows: repeat(12, 1fr);
+    padding: 12px;
+    gap: 12px 12px;
 }

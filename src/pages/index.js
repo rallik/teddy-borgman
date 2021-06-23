@@ -1,5 +1,5 @@
 import * as React from "react"
-import Layout from '../components/layout'
+import { Layout, Hero } from '../components'
 import '../styles/styles.scss'
 
 // styles
@@ -8,9 +8,9 @@ import '../styles/styles.scss'
 // markup
 const IndexPage = () => {
   return (
-    <main className='home-page'>
+    <main className='page home-page'>
       <Layout>
-
+        <Hero />
       </Layout>
     </main>
   )
