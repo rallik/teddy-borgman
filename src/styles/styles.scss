@@ -1,7 +1,52 @@
+@use './resets';
+
 @import url('https://fonts.googleapis.com/css2?family=Kanit:wght@800&display=swap');
 
+body {
+    font-family: Helvetica, sans-serif;
+    background-color: #fefefe;
+}
 
 header {
     font-family: "Kanit", Helvetica, sans-serif;
-    font-size: 1em;
+    font-size: 1.5em;
+    width: min-content;
+    line-height: 0.8em;
+    position: absolute;
+    left: 12px;
+    top: 12px;
+}
+
+.nav-icon {
+    font-size: 4em;
+    font-weight: 100;
+    position: absolute;
+    right: 12px;
+    top: 12px;
+    line-height: 0.3em;
+    z-index: 12;
+    // mix-blend-mode: difference;
+    color: white;
+
+}
+
+
+.navbar {
+    width: 100%;
+    height: 100%;
+    bottom: -100%;
+    right: -100%;
+    position: fixed;
+    isolation: isolate;
+    transition: all 0.5s ease;
+    z-index: 11;
+    background-color: white;
+    mix-blend-mode: difference;
+
+
+}
+
+.navbar.active {
+    top: 0;
+    right: 0;
 }

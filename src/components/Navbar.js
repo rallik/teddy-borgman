@@ -1,11 +1,27 @@
-import React from 'react'
+import React, { useState } from 'react'
+import { Link } from 'gatsby'
 
-const Navbar = () => {
+
+const Nav = () => {
+    const [ clicked, setClicked ] = useState(false);
+
+    const handleClick = () => {
+        setClicked(!clicked);
+    }
+
+
+
     return (
-        <div>
-            Navbar
-        </div>
+        <React.Fragment>
+            <i className='nav-icon' onClick={handleClick}>
+                {clicked ? 'x' : '='}
+            </i>
+            <nav className={clicked ? 'navbar active' : 'navbar'}>
+
+            </nav>
+        </React.Fragment>
+        
     )
 }
 
-export default Navbar
+export default Nav

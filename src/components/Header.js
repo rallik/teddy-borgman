@@ -3,7 +3,7 @@ import React from 'react'
 const Header = () => {
     return (
         <header>
-            Teddy Borgman
+            <h1>Teddy Borgman</h1>
         </header>
     )
 }
