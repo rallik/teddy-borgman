@@ -1,6 +1,6 @@
 import * as React from "react"
 import { graphql } from "gatsby"
-import { Layout, Hero, Highlights } from '../components'
+import { Layout, Hero, Videolist } from '../components'
 import '../styles/styles.scss'
 
 // styles
@@ -8,11 +8,13 @@ import '../styles/styles.scss'
 
 // markup
 const IndexPage = ({ location, data }) => {
+  console.log(location)
+
   return (
     <main className='page home-page'>
       <Layout location={location}>
         <Hero />
-        <Highlights data={data} />
+        <Videolist location={location} data={data}/>
       </Layout>
     </main>
   )
@@ -20,17 +22,14 @@ const IndexPage = ({ location, data }) => {
 
 
 export const query = graphql`
-  {
-    allDataJson {
-      nodes {
-        work {
-          title
-          highlight
-          src
-        }
-      }
+{
+  allVideosJson(filter: {highlight: {eq: false}}) {
+    nodes {
+      title
+      src
     }
   }
+}
 `
 
 export default IndexPage

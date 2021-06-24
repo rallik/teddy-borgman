@@ -3,9 +3,9 @@ import { Videolist } from './index'
 
 const Highlights = ({ location, data }) => {
     return (
-        <section className='section highlights'>
+        <React.Fragment>
             <Videolist location={location} data={data} />
-        </section>
+        </React.Fragment>
     )
 }
 

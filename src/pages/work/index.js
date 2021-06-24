@@ -4,6 +4,7 @@ import { Layout, Videolist } from '../../components'
 
 
 const work = ({ location, data }) => {
+    console.log(location)
     return (
         <main className='page work-page'>
             <Layout>
@@ -14,14 +15,11 @@ const work = ({ location, data }) => {
 }
 
 export const query = graphql`
-  {
-    allDataJson {
+{
+    allVideosJson {
       nodes {
-        work {
-          title
-          highlight
-          src
-        }
+        title
+        src
       }
     }
   }
