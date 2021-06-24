@@ -23,10 +23,11 @@ const IndexPage = ({ location, data }) => {
 
 export const query = graphql`
 {
-  allVideosJson(filter: {highlight: {eq: false}}) {
+  allVideosJson(filter: {highlight: {eq: true}}) {
     nodes {
       title
       src
+      id
     }
   }
 }
