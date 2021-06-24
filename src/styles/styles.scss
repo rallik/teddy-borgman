@@ -18,6 +18,7 @@ header {
     position: fixed;
     left: 12px;
     top: 12px;
+    
 
     a {
         text-decoration: none;
@@ -185,6 +186,42 @@ footer {
     font-size: 1.2em;
     font-weight: 400;
 }
+
+
+.btn {
+    width: min-content;
+    height: min-content;
+    line-height: normal;
+    border-radius: 50px;
+    white-space: nowrap;
+    font-weight: 400;
+    cursor: pointer;
+    font-size: 0.9em;
+
+
+    a {
+        text-decoration: none;
+        display: inline-block;
+        position: relative;
+        border-radius: 50px;
+    }
+}
+
+.large-btn {
+    background-color: #0b0b0b;
+    padding: 0.85rem 2.2rem;
+    align-self: center;
+    justify-self: start;
+    grid-row: -3 / -1;
+    grid-column: 1 / -1;
+
+    a {
+        color: #fefefe;
+        padding: 0.85rem 2.2rem;
+        margin: -0.85rem -2.2rem;
+    }
+}
+
 
 // All Video
 .video-list > ul {

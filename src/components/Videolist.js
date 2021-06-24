@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from "gatsby"
 import { Video } from './index'
 
 const Videolist = ({ location, data }) => {
@@ -12,6 +13,11 @@ const Videolist = ({ location, data }) => {
                     data.allVideosJson?.nodes?.map((vid) => <Video key={vid.id} video={vid}/>)
                 }
             </ul>
+            {onworkpage ? '' : (
+                <button className='btn large-btn'>
+                    <Link to='/work'>All Work</Link>
+                </button>
+            )}
         </section>
     )
 }
