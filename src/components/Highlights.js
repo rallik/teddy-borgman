@@ -1,9 +1,10 @@
 import React from 'react'
+import { Videolist } from './index'
 
-const Highlights = () => {
+const Highlights = ({ location, data }) => {
     return (
         <section className='section highlights'>
-            {/* <h2 className='head highlights-head'>Recent Highlights</h2> */}
+            <Videolist location={location} data={data} />
         </section>
     )
 }

@@ -8,6 +8,10 @@ export { default as Navlist } from './Navlist';
 export { default as Footer } from './Footer';
 export { default as Hero } from './Hero';
 export { default as Highlights } from './Highlights';
+export { default as Videolist } from './Videolist';
+export { default as Video } from './Video';
+
+
 
 
 

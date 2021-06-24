@@ -1,15 +1,30 @@
 import React from 'react'
-import { Layout } from '../../components'
+import { graphql } from "gatsby"
+import { Layout, Videolist } from '../../components'
 
 
-const work = ({ location }) => {
+const work = ({ location, data }) => {
     return (
         <main className='page work-page'>
             <Layout>
-                <section className='section' style={{ height: '100vh'}}></section>
+                <Videolist location={location} data={data}/>
             </Layout>
         </main>
     )
 }
+
+export const query = graphql`
+  {
+    allDataJson {
+      nodes {
+        work {
+          title
+          highlight
+          src
+        }
+      }
+    }
+  }
+`
 
 export default work
