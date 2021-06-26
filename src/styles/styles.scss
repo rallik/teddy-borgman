@@ -291,3 +291,23 @@ footer {
 .vid-list-li:first-child{
     margin: 0 0 1.5rem 0;
 }
+
+
+//Work
+
+.work {
+    grid-template-rows: 50px 50px auto;
+    margin-bottom: 4rem;
+}
+
+.work-head {
+    grid-column: 1 / -1;
+    grid-row: 1 / 3;
+    align-self: end;
+    justify-self: center;
+    height: 2rem;
+}
+.work-list {
+    grid-column: 1 / -1;
+    grid-row: 3 / -1;
+}

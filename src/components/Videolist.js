@@ -8,6 +8,9 @@ const Videolist = ({ location, data }) => {
 
     return (
         <section className={onworkpage ? 'section video-list work' : 'section video-list highlights'}>
+            {onworkpage ? (
+                <h2 className='head work-head'>My Work</h2>
+            ) : '' }
             <ul className={onworkpage ? 'work-list' : 'highlights-list'}>
                 {
                     data.allVideosJson?.nodes?.map((vid) => <Video key={vid.id} video={vid}/>)

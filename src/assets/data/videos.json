@@ -1,13 +1,13 @@
 [
     {
-        "title": "Glorius Natick Cheer",
+        "title": "Liz and Zach",
         "highlight": true,
-        "src": "https://www.youtube.com/embed/2v0cNEDOdNU"
+        "src": "https://www.youtube.com/embed/5pMoH_uJidI"
     },
     {
-        "title": "Unified Sports - Natick T&F",
+        "title": "Beautiful Boston Wedding",
         "highlight": true,
-        "src": "https://www.youtube.com/embed/bSmYkl3nCOs"
+        "src": "https://www.youtube.com/embed/UIRIz6NAokA"
     },
     {
         "title": "Inside METfit",
@@ -19,6 +19,16 @@
         "highlight": false,
         "src": "https://www.youtube.com/embed/8oc7odQ5GHA"
     },
+    {
+        "title": "Unified Sports - Natick T&F",
+        "highlight": false,
+        "src": "https://www.youtube.com/embed/bSmYkl3nCOs"
+    },
+    {
+        "title": "Glorius Natick Cheer",
+        "highlight": false,
+        "src": "https://www.youtube.com/embed/2v0cNEDOdNU"
+    },    
     {
         "title": "If We All Die Tomorrow",
         "highlight": false,

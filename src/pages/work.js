@@ -1,6 +1,6 @@
 import React from 'react'
 import { graphql } from "gatsby"
-import { Layout, Videolist } from '../../components'
+import { Layout, Videolist } from '../components'
 
 
 const work = ({ location, data }) => {

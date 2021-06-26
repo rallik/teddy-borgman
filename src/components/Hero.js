@@ -6,7 +6,7 @@ const Hero = () => {
             <div className='hero-text'>
                 <h2>Creator</h2>
                 <h2>Storyteller</h2>
-                <h2>Editor</h2>
+                <h2>Filmmaker</h2>
             </div>
         </section>
     )
