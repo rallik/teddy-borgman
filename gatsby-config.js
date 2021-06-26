@@ -1,12 +1,14 @@
 module.exports = {
   siteMetadata: {
     title: "Teddy Borgman's Portfolio",
+    siteUrl: "http://localhost:9000/"
   },
   plugins: [
     "gatsby-plugin-sass",
     "gatsby-plugin-sharp",
     "gatsby-plugin-react-helmet",
     "gatsby-plugin-sitemap",
+    "gatsby-plugin-image",
     "gatsby-transformer-sharp",
     "gatsby-transformer-json",
     {

@@ -17,7 +17,7 @@ const Videolist = ({ location, data }) => {
                 }
             </ul>
             {onworkpage ? '' : (
-                <button className='btn large-btn'>
+                <button className='btn large-btn dark'>
                     <Link to='/work'>All Work</Link>
                 </button>
             )}
