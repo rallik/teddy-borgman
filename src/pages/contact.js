@@ -1,11 +1,14 @@
 import React from 'react'
-import { Layout } from '../components'
+import { Layout, Form } from '../components'
 
 const contact = ({ location }) => {
     return (
-        <main className='page about-page'>
+        <main className='page contact-page'>
             <Layout location={location}>
-                <section className='section' style={{ height: '100vh'}}></section>
+                <section className='section contact'>
+                    <h2 className='head contact-head'>Contact Me</h2>
+                    <Form/>
+                </section>
             </Layout>
         </main>
 

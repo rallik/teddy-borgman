@@ -9,7 +9,7 @@ const Hero = () => {
                 <h2>Storyteller</h2>
                 <h2>Filmmaker</h2>
             </div>
-            <Getintouch/>
+            <Getintouch btnclass={'in-touch-hero-btn'}/>
         </section>
     )
 }

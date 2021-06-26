@@ -210,11 +210,7 @@ footer {
 .large-btn {
     background-color: #0b0b0b;
     padding: 0.85rem 2.2rem;
-    align-self: center;
-    justify-self: start;
-    grid-row: -3 / -1;
-    grid-column: 1 / -1;
-
+    
     a {
         color: #fefefe;
         padding: 0.85rem 2.2rem;
@@ -224,6 +220,7 @@ footer {
 
 .dark {
     background-color: #0b0b0b;
+    color: #fefefe;
     a {
         color: #fefefe;
     }
@@ -264,6 +261,14 @@ footer {
     h2:last-child {
         align-self: flex-end;
     }
+}
+
+.in-touch-hero-btn {
+    align-self: center;
+    justify-self: start;
+    grid-row: -3 / -1;
+    grid-column: 1 / -1;
+
 }
 
 // All Video
@@ -349,4 +354,109 @@ footer {
     font-size: 1.2em;
     line-height: 1.25rem;
     align-self: start;
+}
+
+//Contact
+//Section
+.get-in-touch {
+    margin-bottom: 2rem;
+}
+
+.in-touch-text {
+    grid-column: 1 / -1;
+    grid-row: 1 / 6;
+}
+.in-touch-contact-btn {
+    grid-column: 1 / -1;
+    grid-row: -6 / -1;
+}
+
+.in-touch-text, .in-touch-contact-btn {
+    align-self: center;
+    justify-self: center;
+}
+
+
+//Page
+.contact {
+    grid-template-rows: 50px 50px repeat(10, 1fr);
+    min-height: 100vh;
+}
+
+.contact-head {
+    grid-column: 1 / -1;
+    grid-row: 1 / 3;
+    align-self: end;
+    justify-self: center;
+    height: 2rem;
+}
+
+.contact-form, .form-input {
+    max-width: 22em;
+}
+
+.contact-form {
+    background-color: inherit;
+    width: 100%;
+    height: 22em;
+    max-height: fit-content;
+    justify-self: center;
+    align-self: center;
+    font-size: 1em;
+    grid-column: 1 / -1;
+    grid-row: 4 / 10;
+}
+
+.form-input {
+    width: 100%;
+    padding-top: 1.25rem;
+}
+
+.less-pad {
+    padding-top: 0.5rem;
+}
+
+.contact-form input, .contact-form textarea {
+    border: 1px solid #e3e3e3;
+    background-color: #f7f7f7;
+    width: 100%;
+    margin-top: 0.5rem;
+} 
+
+.contact-form input {
+    height: 2.1em;
+}
+
+.contact-form textarea {
+    border: 1px solid #e3e3e3;
+    border-radius: 4px;
+    background-color: #f7f7f7;
+    margin-top: 0.5rem;
+    width: 100%;
+    height: 8em;
+}
+
+.send-btn {
+    margin-top: 1.5rem;
+}
+
+.submit-sucess {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(6, 1fr);
+
+}
+
+.submit-msg {
+    grid-row: 1 / 3;
+    grid-column: 1 / -1;
+    align-self: end;
+    justify-self: center;
+}
+
+.send-again-btn {
+    grid-column: 1 / -1;
+    grid-row: 3 / 6;
+    justify-self: center;
+    align-self: center;
 }

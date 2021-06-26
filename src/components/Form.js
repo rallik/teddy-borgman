@@ -36,20 +36,19 @@ const Form = () => {
     //TODO error checking successful submit
     if (sent) {
       return (
-        <section className="contact-form submit-sucess">
+        <div className="contact-form submit-sucess">
           
           <h2 className='submit-msg'>Thanks for reaching out!</h2>
-          <button className="btn big-btn dark" onClick={() => setSent(false)}>Send another</button>
+          <button className="btn large-btn dark send-again-btn" onClick={() => setSent(false)}>Send another</button>
 
-        </section>
+        </div>
         );
     } else {
 
       return (
-        <section className="contact-form">
           <form
-            name="contact"
-            className="form"
+            name="contact-form"
+            className="contact-form"
             method="post"
             data-netlify="true"
             data-netlify-honeypot="bot-field"
@@ -83,10 +82,9 @@ const Form = () => {
               </label>
             </p>
             <p className='form-submit'>
-              <button className="btn big-btn dark" type="submit">Send</button>
+              <button className="btn large-btn dark send-btn" type="submit">Send</button>
             </p>
           </form>
-        </section>
       );
     }
 }
