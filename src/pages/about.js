@@ -8,7 +8,7 @@ const about = ({ location, data }) => {
     const aboutpic = getImage(data.aboutpic)
     return (
         <main className='page about-page'>
-            <Layout>
+            <Layout location={location}>
                 <section className='section about'>
                     <h2 className='head about-head'>About Me</h2>
                     <GatsbyImage className='about-pic' image={aboutpic} alt='Teddy Borgman' imgStyle={{objectFit: "contain"}}/>

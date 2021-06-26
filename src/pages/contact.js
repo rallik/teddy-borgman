@@ -4,7 +4,7 @@ import { Layout } from '../components'
 const contact = ({ location }) => {
     return (
         <main className='page about-page'>
-            <Layout>
+            <Layout location={location}>
                 <section className='section' style={{ height: '100vh'}}></section>
             </Layout>
         </main>

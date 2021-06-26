@@ -7,7 +7,7 @@ const work = ({ location, data }) => {
     console.log(location)
     return (
         <main className='page work-page'>
-            <Layout>
+            <Layout location={location}>
                 <Videolist location={location} data={data}/>
             </Layout>
         </main>
