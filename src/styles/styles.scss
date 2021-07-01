@@ -249,6 +249,7 @@ footer {
     flex-direction: column;
     align-items: center;
     justify-content: flex-end;
+    max-width: 1200;
 
     h2 {
         margin: 0.75rem 0;
@@ -459,4 +460,63 @@ footer {
     grid-row: 3 / 6;
     justify-self: center;
     align-self: center;
+}
+
+
+@media screen and (min-width: 550px) {
+    .hero-text {
+        min-width: 500px;
+        margin: 0 auto;
+    }
+}
+
+@media screen and (min-width: 1025px) and (min-height: 630px) {
+    .navbar, .navbar.active {
+        display: block;
+        margin: 0;
+        padding: 0;
+        position: fixed;
+        top: 12px;
+        right: -10px;
+        width: min-content;
+        height: min-content;
+        mix-blend-mode: difference;
+        transition: none;
+    }
+
+    .nav-elements {
+        flex-direction: row;
+        justify-content: flex-end;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        right: 0;
+        padding: 0;
+        transition: none;
+        border-radius: 0;
+    }
+    
+    .nav-element-li {
+        font-size: 1em;
+        font-weight: 400;
+        padding: 0.8rem 2rem;
+        a {
+            color: #fefefe;
+        }
+    }
+
+    .nav-icon, .social-links.mobile {
+        display: none;
+        transition: none;
+    }
+
+    .nav-elements.mobile {
+        background-color: inherit;
+        transition: none;
+    }
+
+
+    .footer-sitemap-mobile {
+        display: none;
+    }
 }
